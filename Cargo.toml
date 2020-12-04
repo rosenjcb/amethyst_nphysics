@@ -12,7 +12,7 @@ license = "MIT"
 
 [dependencies]
 amethyst_core = "0.15.3"
-amethyst_physics = "0.2.1"
+amethyst_physics = { git = "https://github.com/kerkmann/amethyst_physics.git" }
 log = "0.4.6"
 ncollide3d = "0.21.0"
 nphysics3d = "0.13.0"
