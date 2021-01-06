@@ -173,8 +173,8 @@ where
 
         // Create Rigid body
         let np_rigid_body = NpRigidBodyDesc::new()
-            .set_status(body_mode_conversor::to_physics(body_desc.mode))
-            .set_mass(body_desc.mass)
+            //.set_status(body_mode_conversor::to_physics(body_desc.mode))
+            //.set_mass(body_desc.mass)
             .build();
 
         let cg =
