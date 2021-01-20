@@ -18,7 +18,6 @@ use crate::{
     storage::StoreKey,
     utils::*,
 };
-use nphysics3d::object::RigidBody;
 
 pub struct RBodyNpServer<N: PtReal> {
     storages: ServersStorages<N>,
@@ -174,8 +173,8 @@ where
 
         // Create Rigid body
         let np_rigid_body = NpRigidBodyDesc::new()
-            .set_status(body_mode_conversor::to_physics(body_desc.mode))
-            .set_mass(body_desc.mass)
+            //.set_status(body_mode_conversor::to_physics(body_desc.mode))
+            //.set_mass(body_desc.mass)
             .build();
 
         let cg =
